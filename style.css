@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+*{ 
+    font-family: 'Cairo', sans-serif;
+    font-weight: 400;
+    direction: rtl;
+    color: #ec8188;
+    text-align: center;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image:linear-gradient(to right, #e0e0e0, white);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+@keyframes appear {
+0% {
+opacity: 0;
+transform: translateY(-200px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.appear {
+animation: appear 2s ease forwards;
+animation-delay: 0;
+}
+
+
+
+
+@keyframes appearr {
+0% {
+opacity: 0;
+transform: translateX(200px);
+}
+100% {
+opacity: 1;
+transform: translateX(0);
+}
+}
+
+.appearr {
+animation: appearr 2s ease forwards;
+animation-delay: 0;
+}
+
+
+
+
+.loader {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #eeeeee;
+transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+opacity: 0;
+visibility: hidden;
+}
+
+.loader::after {
+content: "";
+width: 75px;
+height: 75px;
+border: 15px solid #dddddd;
+border-top-color: darkblue;
+border-radius: 50%;
+animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+from {
+transform: rotate(0turn);
+}
+to {
+transform: rotate(1turn);
+}
+}
+#readBTN {
+    color: #575d7c;
+    cursor: pointer;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: #fff;
+    transition: 0.6s;
+    text-decoration: none;
+}
+#readBTN:hover{
+        background-color:#eee;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+.dif {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.dif h1 {
+    font-size: 25px;
+}
+.one , .tow {
+    padding-bottom: 50px;
+}
+
+@keyframes appearl {
+    0% {
+    opacity: 0;
+    transform: translateX(-200px);
+    }
+    100% {
+    opacity: 1;
+    transform: translateX(0);
+    }
+    }
+    
+    .appearl, .one , .tow, .one a, .tow a {
+    animation: appearl 2s ease forwards;
+    animation-delay: 0;
+    }
+    .dif h6 {
+        font-size: 15px;
+        text-align: start;
+        padding-right: 3%;
+        color: #a1a1df;
+    }
+    .one , .tow {
+        border: dashed 1px  #575d7c;
+        margin: 10px;
+        border-radius: 4px;
+    }
+    .dif a {
+        margin-bottom: 10px;
+    }
+    .free {
+        margin-top: 100px;
+        border: dashed #a1a1df;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    .free h1{
+        color: #575d7c;
+    }
+    .free button {
+        margin: 15px;
+    }
+    .paiedinf .linet{
+    text-decoration: line-through;
+    }
+    .paiedinf h4 {
+        color:#575d7c;
+        text-align: start;
+        margin-right: 20px;
+    }
+    .paiedinf {
+        border: double #a1a1df;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 4px;
+        margin-top: 100px;
+        padding-bottom: 50px;
+    }

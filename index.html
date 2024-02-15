@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حربٌ نفسية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader"></div>
+    <h1 class="appear">أهلاً وسهلاً بكَ في موقعنا المتواضع</h1>
+    <h3 class="appear">هُنا ستجدُ كلّ ما تحتاجهُ عن كتاب " حربٌ نفسية ".</h3>
+
+    <div class="dif">
+        <div class="one">
+            <h1>النسخة المجانية</h1>
+            <h6>أبيض وأسود</h6>
+            <h6>ستٌ وعشرون صفحة للقراءة</h6>
+            <a id="readBTN" class="appearl" href="#free">قراءة الكتاب</a>
+        </div>
+        <div class="tow">
+            <h1>النسخة المدفوعة</h1>
+            <h6>ملون</h6>
+            <h6>مع مباحث الحرب، ٤١ صفحة</h6>
+            <a id="readBTN" class="appearl" href="#paid">شراء الكتاب</a>
+        </div>
+    </div>
+    <div class="paiedinf appearr">
+        <h1>النسخة المدفوعة</h1>
+        <h4 class="linet">١٠٠٠ دينار عراقي</h4>
+        <h4>٥٠٠ دينار عراقي</h4>
+        <a href="https://t.me/rfgcn" id="readBTN">إشتريها الآن!</a>
+        
+    </div>
+    <section id="free">
+    <div class="free appearl">
+        <h1>النسخة المجانية</h1>
+        <button id="readBTN" onclick="freereadhtml()">قراءة سريعة <i class='bx bx-book-reader'></i></button>
+        <a href="Book.pdf"><button id="readBTN">تحميل PDF <i class='bx bx-download'></i></button></a>
+    </div>
+    </section>
+
+
+    <section id="paid">
+        <div class="free paid appearr">
+            <h1>النسخة المدفوعة</h1>
+            <button id="readBTN" onclick="check()">قراءة سريعة <i class='bx bx-book-reader'></i></button>
+            <button id="readBTN" onclick="check2()">تحميل PDF <i class='bx bx-download'></i></button>
+        </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+<script>
+    window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+function freereadhtml(){
+    window.location.href = 'freeread.html';
+}
+function check(){
+    window.location.href = 'check.html';
+}
+function check2(){
+    window.location.href = 'check2.html';
+}
+</script>

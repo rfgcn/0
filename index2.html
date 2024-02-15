@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حربٌ نفسية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader"></div>
+    <h1 class="appear">أهلاً وسهلاً بكَ في موقعنا المتواضع</h1>
+    <h3 class="appear">هُنا ستجدُ كلّ ما تحتاجهُ عن كتاب " حربٌ نفسية ".</h3>
+
+ 
+    <section id="paid">
+        <div class="free paid appearr">
+            <h1>إقرأ الكتاب الآن!</h1>
+            <button id="readBTN" onclick="check2()">فتح الكتاب PDF <i class='bx bx-download'></i></button>
+        </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+<script>
+    window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+function freereadhtml(){
+    window.location.href = 'freeread.html';
+}
+function check(){
+    window.location.href = 'paidread.html';
+}
+function check2(){
+    window.location.href = 'Book2.pdf';
+}
+</script>

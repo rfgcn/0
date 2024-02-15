@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> تحقق | حربٌ نفسية</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+    *{
+        font-family: 'Cairo', sans-serif;
+    }
+    body {
+        text-align: center;
+        direction: rtl;
+    }
+    input {
+        padding: 10px;
+        font-size: 16px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    #readBTN {
+        margin-top: 15px;
+    color: #717171;
+    cursor: pointer;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: #eee;
+    transition: 0.9s;
+    text-decoration: none;
+    margin-top: 150px;
+}
+#readBTN:hover{
+        background-color:#fff;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+</style>
+</head>
+<body>
+<p style="color: #000fff;">يجب عليكَ أن تتواصل مع المؤلف أولاً، ثم تسليم المال له ثمّ سيعطيك الكود، ثمّ أدخل الكود هُنا.</p>
+<a href="https://t.me/rfgcn" style="color: #007bff; text-decoration: none;">تواصل معَ المؤلف</a><br>
+<input type="text" id="codeInput" placeholder="أدخل الكود...">
+<button onclick="checkCode()"> تحقق</button>
+<p id="message" style="margin-bottom: 150px;"></p>
+<a href="index.html" id="readBTN"> ↬ عودة للصفحة الرئيسية</a>
+
+<script>
+function checkCode() {
+    var input = document.getElementById("codeInput").value;
+    var messageElement = document.getElementById("message");
+
+    if (input.trim().toLowerCase() === "hihr") {
+        // Redirect to index2.html
+        window.location.href = "paidread.html";
+    } else {
+        messageElement.innerText = " كود خاطئ";
+    }
+}
+</script>
+
+</body>
+</html>
